@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body{
+    background-image: url("PLgQbl.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+
+<body>
+    <div class="container">
+        <nav>College Registration Form</nav>
+        <div class="input-form">
+            <h1>Register Now!!!</h1>
+            <form action="#" id="input-form">
+                <div class="input-group">
+                    <input type="text" class="input-field" id="name" required autofocus>
+                    <label for="name">Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" class="input-field" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" class="input-field" id="age" required>
+                    <label for="age">Age</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="input-field" id="addr" required>
+                    <label for="addr">Address</label>
+                </div>
+                <div class="input-select">
+                    <label for="gender" class="Label">Gender</label><br>
+                    <input type="radio" id="male" value="Male" name="gender">Male
+                    <input type="radio" id="female" value="Female" name="gender">Female
+                    <input type="radio" id="female" value="Other" name="gender">Other
+                </div>
+                <div class="input-select">
+                    <label for="skills" class="Label">Your Skills </label><br>
+                    <input type="checkbox" name="skills" id="Full Stack Development" value="Full Stack Development">Full Stack Development
+                    <input type="checkbox" name="skills" id="Data Science" value="Data Science"> Data Science
+                    <br><input type="checkbox" name="skills" id="Cyber Security" value="Cyber Security">Cyber Security
+                    <input type="checkbox" name="skills" id="Cloud Computing" value="Cloud Computing">Cloud Computing
+                    <br><input type="checkbox" name="skills" id="UI/UX Designing" value="UI/UX Designing">UI/UX Designing
+                    <input type="checkbox" name="skills" id="BlockChain Development" value="BlockChain Development">BlockChain Development
+                </div>
+                <div class="buttons">
+                    <button type="button" id="add-btn">REGISTER</button>
+                    <button type="button" id="delete-btn">DELETE</button>
+                </div>
+            </form>
+        </div>
+        <div class="line"></div>
+        <div class="table">
+            <h1>Registered Students</h1>
+            <div class="scroll">
+                <table id="display">
+                    <tr>
+                        <th>Student Details</th>
+                        <th>Profile</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
